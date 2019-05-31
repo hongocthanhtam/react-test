@@ -3,15 +3,14 @@ import Parent from "./Parent";
 import Header from "./Header";
 import ColorContext from "./components/ColorContext";
 
-class App extends React.Component {
+export default class App extends React.Component {
   state = {
-    // bgColor: ["red", "yellow", "blue", "green", "purple", "pink"],
+    bgColor: ["red", "yellow", "blue", "green", "purple", "pink"],
     color: ""
   };
   change = () => {
-    // let bgColors = this.state.bgColor;
-    // const color = bgColors[Math.floor(Math.random() * bgColors.length)];
-    this.state.color = "#fff";
+    let bgColors = this.state.bgColor;
+    const color = bgColors[Math.floor(Math.random() * bgColors.length)];
     this.setState({
       color
     });
@@ -29,5 +28,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;
