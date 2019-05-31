@@ -6,9 +6,7 @@ export default props => {
   const [textData, setTextData] = useState(props.todo.text);
   const { toggleComplete, onDelete, deleteEdit } = useContext(TodoContext);
   const onChangeHandle = event => {
-    setTextData({
-      textData: event.target.value
-    });
+    setTextData(event.target.value);
   };
   const handleSubmit = event => {
     event.preventDefault();
