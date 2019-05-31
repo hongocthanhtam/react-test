@@ -5,7 +5,6 @@ import TodoContext from "./TodoContext";
 export default props => {
   const [textData, setTextData] = useState(props.todo.text);
   const { toggleComplete, onDelete, deleteEdit } = useContext(TodoContext);
-  console.log(props.showEditTodoTask);
   const onChangeHandle = event => {
     setTextData({
       textData: event.target.value
