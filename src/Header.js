@@ -17,13 +17,19 @@ class Header extends React.Component {
           <div className="title">Todo React Redux</div>
         </div>
         <div className="item">
-          <img
-            className="githubIcon"
-            src={github}
-            alt="htactive"
-            width="21"
-            height="21"
-          />
+          <a
+            style={{ cursor: "point" }}
+            href="https://github.com/hongocthanhtam/react-test"
+            target="__blank"
+          >
+            <img
+              className="githubIcon"
+              src={github}
+              alt="htactive"
+              width="21"
+              height="21"
+            />
+          </a>
         </div>
       </div>
     );
